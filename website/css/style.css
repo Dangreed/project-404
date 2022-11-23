@@ -1,0 +1,296 @@
+/* variables/options */
+
+:root {
+    --main-color: #343D46;
+    --secondary-color: #68C984;
+
+    --user-image: url(../images/prifle_pic.png);
+}
+
+/* general */
+
+* {
+    color: white;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--main-color);
+    /* font-family: 'Handlee', cursive; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content-blocks {
+    display: inline-block;
+    width: 100%;
+    border-width: 0px 0px 3px 0px;
+    border-style: solid;
+    border-color: #65737E;
+    border-radius: 12px;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #4F5B67;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+
+/* navigation bar */
+
+#nav-bar {
+    border-radius: 0px 0px 12px 12px;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    margin-top: 0px;
+    padding: 0px;
+    background-color: var(--main-color);
+}
+
+.nav-bar-element {
+    display: inline-block;
+    width: fit-content;
+    height: 35px;
+    margin: 20px;
+    text-align: center;
+    font-size: 20px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    letter-spacing: 2px;
+}
+
+.anchor {
+    float: right;
+}
+
+.anchor:hover {
+    animation: anchor_hover_underline 0.4s linear forwards;
+    cursor: pointer;
+}
+
+/* @keyframes anchor_hover {
+    0% {font-size: 100%;}
+    20% {font-size: 110%;}
+    40% {font-size: 120%;}
+    60% {font-size: 130%;}
+    80% {font-size: 140%;}
+    100% {font-size: 150%;}
+} */
+
+@keyframes anchor_hover_underline {
+    from {text-decoration: none;}
+    to {text-decoration: underline;
+        text-decoration-color: var(--secondary-color);
+        text-decoration-thickness: 2px;}
+}
+
+/* user info block */
+
+#general-info {
+    width: 100%;
+    height: 170px;
+    margin-top: 10px;
+}  
+
+#info {
+    width: 120px;
+    height: fit-content;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 2px;
+}
+
+.info-element {
+    display: inline-block;
+}
+
+#user-name {
+    color: white;
+    font-size: 20px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+#photo {
+    width: 110px;
+    height: 110px;
+    border: 2px solid white;
+    border-radius: 100%;
+    margin-bottom: 10px;
+    background: var(--user-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* about me block*/
+
+#about-me-text {
+    width: 92%;
+    text-align: center;
+    font-size: 15px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    margin: auto;
+}
+
+/* schedule block */
+
+#schedule {
+    height: 400px;
+}
+
+#table {
+    width: 90%;
+    height: auto;
+    /* border: 1px solid white; */
+    margin: auto;
+}
+
+table, td, th {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-size: 15px;
+    letter-spacing: 1px;
+ 
+}
+
+td, th {
+    text-align: left;
+    padding: 5px;
+}
+
+/* write a message block  */
+
+#write-message {
+    height: 350px;
+
+}
+
+#form {
+    /* border: 1px solid white; */
+    width: 90%;
+    margin: auto;  
+}
+
+.input-field {
+    display: inline-block;
+}
+
+#name, #email, #message {
+    width: 95%;
+    margin: 3px auto;
+    border-radius: 5px;
+    color: black;
+}
+
+#button {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    width: 85px;
+}
+
+#message {
+    height: 200px;
+    text-align: start;    
+}
+
+
+#info-wrapper {
+    width: 29%;
+    display: inline-block;
+    padding: 3px;
+}
+
+#message-wrapper {
+    width: 69%;
+    display: inline-block;
+}
+
+#button:hover {
+    cursor: pointer;
+}
+
+
+/* social media block */
+
+#media {
+    height: 70px;
+    border-bottom: 0px;
+}
+
+.media-element {
+    display: inline-block;
+    width: fit-content;
+    height: 30px;
+}
+
+.text {
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 15px;
+}
+
+.social {
+    height: 30px; 
+    float: right;
+    margin: 15px;
+}
+
+i {
+    color: white;
+}
+
+/* social media icon animations */
+
+#facebook, #linkedin, #twitter, #youtube, #discord:hover {
+    cursor: pointer;
+}
+
+#facebook:hover {animation: fb_hover linear forwards 0.3s}
+#linkedin:hover {animation: linkedin_hover linear forwards 0.3s}
+#twitter:hover {animation: twitter_hover linear forwards 0.3s}
+#youtube:hover {animation: yt_hover linear forwards 0.3s}
+#discord:hover {animation: discord_hover linear forwards 0.3s}
+
+@keyframes fb_hover {
+    from {color: white;}
+    to {color: #0A80EC;}   
+}
+
+@keyframes linkedin_hover {
+    from {color: white;}
+    to {color: #0077B5;}   
+}
+
+@keyframes twitter_hover {
+    from {color: white;}
+    to {color: #1DA1F2;}   
+}
+
+@keyframes yt_hover {
+    from {color: white;}
+    to {color: #FF0000;}   
+}
+
+@keyframes discord_hover {
+    from {color: white;}
+    to {color: #5662F6;}   
+}
