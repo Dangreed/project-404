@@ -76,7 +76,7 @@ body {
 }
 
 .anchor:hover {
-    animation: anchor_hover_underline 0.4s linear forwards;
+    animation: anchor_hover_underline 0.3s linear forwards;
     cursor: pointer;
 }
 
